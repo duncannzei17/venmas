@@ -19,6 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/inventory', 'PagesController@inventory');
+Route::get('/addInventory1', 'PagesController@addInventory1');
 
-Route::get('/Inventory', 'InventoryController@showInventory');
+Route::get('/addInventory2', 'PagesController@addInventory2');
+
+Route::get('/viewInventory', 'PagesController@viewInventory');
+

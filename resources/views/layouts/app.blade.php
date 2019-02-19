@@ -197,12 +197,20 @@
 								<!-- BEGIN: side-nav-content -->
 								<ul class="customSidebarMenu" id="customSidebarMenu">
 									<li>
-										<a href="{{action('InventoryController@showInventory')}}">
+										<a href="index-2.html">
 											<span class="has-icon">
 												<i class="icon-av_timer"></i>
 											</span>
-											<span class="nav-title" >Inventory</span>
+											<span class="nav-title">Inventory</span>
 										</a>
+										<ul aria-expanded="false">
+											<li>
+												<a href="{{action('PagesController@viewInventory')}}">View Inventory</a>
+											</li>
+											<li>
+												<a href="{{action('PagesController@addInventory1')}}">Add Inventory</a>
+											</li>
+										</ul>
 									</li>
 									<li>
 										<a href="index-2.html">
@@ -212,7 +220,6 @@
 											<span class="nav-title">Transaction</span>
 										</a>
 									</li>
-								</ul>
 								<!-- END: side-nav-content -->
 							</div>
 
@@ -316,6 +323,16 @@
 			**********************
 			**********************
 		-->
+		<!--Add units-->
+		<script type="text/javascript">
+		var units = [];
+
+        function addUnits() {
+          unitsvalue = document.getElementById('box').value;
+          items.push(boxvalue);
+          console.log(items);
+        }
+		</script>
 
 		<!-- Common JS -->
 		<script src="{{url('js/common.js')}}"></script>
