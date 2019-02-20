@@ -34,10 +34,10 @@
                             <input type="text" class="form-control" id="units" placeholder="Eg. 0.5kg , 2l">
                         </div>
                         <div class="col-sm-2">
-                            <button class="btn btn-primary">Add</button>
+                            <button class="btn btn-primary" id="add-unit-button">Add</button>
                         </div>
-                        <div class="col-sm-6">
-                                
+                        <div class="units-list col-sm-6">
+
                         </div>
                     </div>
                 </div>

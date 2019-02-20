@@ -286,20 +286,14 @@
 		</div>
 		<!-- END: .app-wrap -->
 
-
-		<!--
-			**********************
-			**********************
-			Common JS files
-			**********************
-			**********************
-		-->
-
 		<!-- jQuery first, then Tether, then other JS. -->
 		<script src="{{url('js/jquery.js')}}"></script>
 
 		<!-- jQuery UI is Required only if you use jQuery Related Plugins -->
 		<script src="{{url('js/jquery-ui.min.js')}}"></script>
+
+        <!-- Custom javascript file	-->
+        <script src="{{url('js/main.js')}}"></script>
 
 		<script src="{{url('js/tether.min.js')}}"></script>
 		<script src="{{url('js/bootstrap.min.js')}}"></script>
